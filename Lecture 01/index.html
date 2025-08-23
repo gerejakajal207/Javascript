@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External -->
+    <script src="index.js" defer ></script>
+    <!-- defer likha hai external js will be loaded at the end -->
+    <!-- Internal -->
+    <script>
+        console.log("Test internal")
+    </script>
+</head>
+<body>
+    <h1>Heading</h1>
+    <!-- Inline -->
+    <button onclick="console.log('Event happened, Button clicked')">Click here</button>
+    <br>
+    <button onfocus="console.log('Event happened, Button clicked')">Click here</button>
+    <br>
+    <button onmouseleave="console.log('Event happened, Button clicked')">Click here</button>
+    <br>
+    <button onmouseleave="console.log('Event happened, Button clicked')">Click here</button>
+    <!-- Inline + External -->
+    <button onclick="callFunc();console.log('Working from inline')" disabled>Click here</button>
+    <button onclick="console.log('Hello')" hidden></button>
+</body>
+</html>
