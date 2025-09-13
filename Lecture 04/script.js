@@ -96,11 +96,16 @@ let student=[
 let newObj={
 }
 for (let elem of student){
-    if(newObj[elem.dept]){
+    if(newObj[elem.dept]){   
+        // agar dept exist krta hai toh uska value return krega which will be a truthy value
+        //agar dept exist nhi krta toh it will return undefined which is a falsy value->else mei jayega
         newObj[elem.dept].push(elem.name)
+        // agar exist krta hai toh newOj[elem.dept] will return an array of names and therefore push 
     }
     else{
         newObj[elem.dept]=[elem.name]
+        // else mein aaya matlab exist nhi krta hai , exist nhi krta toh array bnana pdega newObj[elem.dept] se dept milega ab dept ke key mein [elem.name] -> naam array m aayega [] aur value banjayega for the key dept
     }
 }
 console.log(newObj)
+
