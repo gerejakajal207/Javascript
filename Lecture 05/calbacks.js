@@ -34,5 +34,4 @@ setTimeout(()=>{console.log('hello')},10000);
 setInterval(()=>{console.log('hi')},3000);
 // after every 10000ms hi will get printed
 // runs again n again
-
 // passed a function as a parameter in both of these
