@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="Inventory.js" defer></script>
+  </head>
+  <body>
+    <!-- Form for taking product name, quantity and proce -->
+    <form action="">
+      <!-- Container for label and input of Product name -->
+      <div>
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" name="product-name" />
+      </div>
+      <!-- Container for label and input of Product Quantity -->
+      <div>
+        <label for="product-quantity">Product Quantity</label>
+        <input type="number" id="product-quantity" name="product-quantity" />
+      </div>
+      <!-- Container for label and input of Product Price -->
+      <div>
+        <label for="product-price">Product Price</label>
+        <input type="number" id="product-price" name="product-price" />
+      </div>
+      <!-- Button to view Products -->
+      <button id="view-btn" type="button">View Products</button>
+      <!-- Button to add Products in the table -->
+      <button id="add-btn" type="button">Add Products</button>
+      <!-- Table to add the products -->
+      <table id="products-table">
+        <tr >
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </table>
+      <!-- Button to sort the products by their price -->
+      <button id="price-btn" type="button">Sort by price</button>
+      <!-- Button to sort the products by their quantity -->
+      <button id="quantity-btn" type="button">Sort by Quantity</button>
+    </form>
+  </body>
+</html>
